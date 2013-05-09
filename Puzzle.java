@@ -14,8 +14,14 @@ public class Puzzle {
    * @return       ArrayList with just Strings
    */
   private ArrayList<String> aaron(ArrayList<String[]> input) {
-    
+  ArrayList<String> outputData = new ArrayList<String>(input.size());
+  for(int i =0; i< input.size(); i++){
+  		String[] inputAtIndex = input.get(i);
+  		outputData.set(i,inputAtIndex[i]);
+   
   }
+  		return outputData;
+	}
 
   /**
    * Removes all instances of the string "3" in an ArrayList
